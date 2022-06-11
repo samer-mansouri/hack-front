@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import StripeContainer from './StripeContainer';
+import CheckoutForm from './PayTest';
 
 
 function Pay() {
@@ -11,7 +11,7 @@ function Pay() {
     <div>
         <h1>TEST</h1>
         {showItem ? (
-            <StripeContainer />
+            <CheckoutForm />
         ) : (
             <>
                 <h3>$10.00</h3>
