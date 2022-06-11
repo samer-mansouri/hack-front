@@ -5,6 +5,7 @@ import MainService from '../services/main.service';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Moment from 'react-moment';
+import { LocationMarkerIcon } from '@heroicons/react/outline';
 
 
 function SingleAnnonce() {
@@ -39,11 +40,17 @@ function SingleAnnonce() {
         <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="mb-8 w-3/4">
-            <div className="flex items-center">
+            <div className="flex items-center justify-between">
+                <div className="flex items-center">
                 <img src={user.picture} alt={user.picture} className="w-full rounded-full w-32" />
                 <div className="ml-4">
                     <h1 className="text-xl font-bold text-gray-900">{user.firstName} {user.lastName}</h1>
-                    <p className="text-gray-700 text-base mb-2"><i>Publiée le: <span className="text-gray-500"><Moment format="YYYY/MM/DD">{data.createdAt}</Moment></span></i></p>
+                    <p className="text-gray-700 text-base mb-2"><i>Publiée le: <span className="text-gray-500"><Moment format="DD/MM/YYYY">{data.createdAt}</Moment></span></i></p>
+                </div>
+                </div>
+                <div className="flex">
+                    <LocationMarkerIcon className="text-gray-500 w-6 h-6" />
+                    <p className="text-gray-700 text-base mb-2 ml-1"><i>{user.address}</i></p>
                 </div>
             </div>
             <div className="w-full object-center overflow-hidden mt-4">

@@ -89,7 +89,7 @@ export default function Navbar() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
-              <h1 className="text-[#d83d2e] font-extrabold text-2xl" >WEDD'IT</h1>
+              <h1 className="text-[#3b82f6] font-extrabold text-2xl" >DONATE</h1>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -252,7 +252,7 @@ export default function Navbar() {
             </NavLink>
             <NavLink
               to="/signup"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#d83d2e] hover:bg-[#d83d2e]"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#3b82f6] hover:bg-[#3b82f6]"
             >
               S'inscrire
             </NavLink>

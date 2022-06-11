@@ -10,7 +10,7 @@ function Up() {
         speed={1500}
         easing="easeInOutQuint"
     >
-    <div className="h-12 w-12 rounded-md bg-[#d83d2e] text-white rounded-full">
+    <div className="h-12 w-12 rounded-md bg-[#3b82f6] text-white rounded-full">
                     <ArrowCircleUpIcon className="h-12 w-12" aria-hidden="true" />
     </div>    
         

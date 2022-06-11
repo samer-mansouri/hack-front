@@ -5,6 +5,7 @@ import AuthService from '../services/auth.service';
 import { useState } from 'react';
 import { Redirect } from "react-router-dom";
 import ErrorAlert from "../components/ErrorAlert";
+import donate  from "../assets/img/donate.jpg"
 
 const SignInSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Email field is required'),
@@ -45,12 +46,12 @@ export default function Login() {
                 <div className="flex-1 flex border shadow     flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 ">
                   <div className="mx-auto w-full max-w-sm lg:w-96 py-36">
                     <div>
-                    <h1 className="text-[#d83d2e] font-extrabold text-2xl" >WEDD'IT</h1>
+                    <h1 className="text-[#3b82f6] font-extrabold text-2xl" >DONATE</h1>
       
                       <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Se connecter à votre compte</h2>
                       <p className="mt-2 text-sm text-gray-600">
                         Ou{' '}
-                        <a href="#" className="font-medium text-[#d83d2e] hover:text-[#d83d2e]">
+                        <a href="#" className="font-medium text-[#3b82f6] hover:text-[#3b82f6]">
                           s'inscrire
                         </a>
                       </p>
@@ -121,7 +122,7 @@ export default function Login() {
                             <button
                               type="submit"
                               disabled={loading}
-                              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#d83d2e] hover:bg-[#d83d2e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d83d2e]"
+                              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#3b82f6] hover:bg-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3b82f6]"
                             >
                               {
                                 loading ?
@@ -140,7 +141,7 @@ export default function Login() {
                 <div className="hidden lg:block relative w-0 flex-1">
                   <img
                     className="absolute inset-0 h-full w-full object-cover"
-                    src="https://static.onecms.io/wp-content/uploads/sites/34/2022/03/23/anastasia-eliran-wedding-couple-0322.jpg"
+                    src={donate}
                     alt=""
                   />
                 </div>

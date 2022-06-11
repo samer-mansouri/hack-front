@@ -7,6 +7,7 @@ import { useRef, useState } from 'react';
 import Navbar from '../layouts/Navbar';
 import SuccessAlert from '../components/SuccessAlert';
 import ExclamationAlertNew from '../components/ExclamationAlertNew';
+import donate from "../assets/img/donate01.jpg"
 
 
 const SignUpSchema = Yup.object().shape({
@@ -55,12 +56,12 @@ export default function Register() {
                 <div className="flex-1 flex border shadow     flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24 ">
                   <div className="mx-auto w-full max-w-sm lg:w-96">
                     <div>
-                    <h1 className="text-[#d83d2e] font-extrabold text-2xl" >WEDD'IT</h1>
+                    <h1 className="text-[#3b82f6] font-extrabold text-2xl" >DONATE</h1>
       
                       <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Créer un nouveau compte</h2>
                       <p className="mt-2 text-sm text-gray-600">
                         Ou{' '}
-                        <a href="#" className="font-medium text-[#d83d2e] hover:text-[#d83d2e]">
+                        <a href="#" className="font-medium text-[#3b82f6] hover:text-[#3b82f6]">
                           connectez vous à votre compte
                         </a>
                       </p>
@@ -215,7 +216,7 @@ export default function Register() {
                                 type="password"
                                 autoComplete="current-password"
                                 required
-                                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#d83d2e] focus:border-gray-500 sm:text-sm"
+                                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#3b82f6] focus:border-gray-500 sm:text-sm"
                               />
                             </div>
                           </div>
@@ -226,7 +227,7 @@ export default function Register() {
                             <button
                               type="submit"
                               disabled={loading}
-                              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#d83d2e] hover:bg-[#d83d2e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d83d2e]"
+                              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#3b82f6] hover:bg-[#3b82f6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#3b82f6]"
                             >
                               {
                                 loading ?
@@ -245,7 +246,7 @@ export default function Register() {
                 <div className="hidden lg:block relative w-0 flex-1">
                   <img
                     className="absolute inset-0 h-full w-full object-cover"
-                    src="https://static.onecms.io/wp-content/uploads/sites/34/2022/03/23/anastasia-eliran-wedding-couple-0322.jpg"
+                    src={donate}
                     alt=""
                   />
                 </div>
